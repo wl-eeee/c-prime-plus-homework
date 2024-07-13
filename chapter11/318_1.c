@@ -17,7 +17,7 @@ void get1(char* copy, int n)
 	char a;
 	int counter = 0;//counter
 	
-	while (((a = getc(fp)) != EOF) && counter < n - 1)
+	while (((a = getc(fp)) != EOF) && counter < n - 1)//notice the parentheses
 	{
 		copy[counter] = a;
 		counter++;
