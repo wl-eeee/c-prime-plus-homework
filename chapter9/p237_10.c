@@ -21,9 +21,8 @@ int to_binary(int input, int b)//n is total b is the binary number b >=2 && b <=
 	do {
 	
 		a[n] = input % b;//warning this is b not b^n
-		printf("an%d input%d b%d n%d\n", a[n], input, b, n);
-		input = (input - a[n]) / b; 
-		printf("input%d an%d\n", input, a[n]);
+
+		input = (input - a[n]) / b; // need to /b
 		printf("\n");
 		n++;
 	} while (input > 0);
