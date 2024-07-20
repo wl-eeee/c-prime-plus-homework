@@ -12,7 +12,7 @@ int main()
 	int all = 0;
 	for (b = 0; b < 5; b++)
 	{
-		all += data[2][b];
+		all = all +*(data[2]+b);
 	}
 
 	printf("%d\n", all / 5);
